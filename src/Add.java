@@ -10,14 +10,14 @@ import java.util.Scanner;
 
 public class Add {
 	private StudentInfo student;
-	Scanner scan = new Scanner(System.in);
-	ArrayList<StudentInfo> students;
+	private Scanner scan = new Scanner(System.in);
+	private ArrayList<StudentInfo> students;
+	private String id;
+	private String name;
+	private String department;
+	private String phone;
 	
 	Add(ArrayList<StudentInfo> students){
-		String id;
-		String name;
-		String department;
-		String phone;
 		System.out.println("Add");
 		System.out.print("id: ");
 		id = scan.nextLine();
