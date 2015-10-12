@@ -11,11 +11,11 @@ public class ManagerTest {
 	static final String FILE_NAME = "student.txt";
 	public static ArrayList<StudentInfo> students;
 	public static void main(String args[]){
-		int selectedMenu=1;
+		int selectedMenu = 1;
 		students = new ArrayList<StudentInfo>();
 		FileIO fileIO = new FileIO();
 		students = fileIO.getData();
-		while(selectedMenu>=1&&selectedMenu<=4){
+		while(selectedMenu >= 1 && selectedMenu <= 4){
 			showMenu();
 			selectedMenu = scan.nextInt();
 			executeMenu(selectedMenu);
@@ -47,6 +47,8 @@ public class ManagerTest {
 		case 3:
 			break;
 		case 4:
+			View view = new View(students);
+			view.view();
 			break;
 		}
 		

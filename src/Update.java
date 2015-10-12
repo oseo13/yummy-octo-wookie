@@ -20,6 +20,7 @@ public class Update {
 		String id;
 		String s;
 		int index = 0;
+		String updatePhoneNum;
 	
 		System.out.print("Input ID you want to upadate :");
 		id = scan.nextLine();
@@ -33,13 +34,9 @@ public class Update {
 			System.out.println("There is no date equal to " + id + ".");
 		
 		else{
-			//¡÷ºÆ√≥∏Æ∞° ∫‰
-			// ∫‰ System.out.println(id + students.get(index).getName() + students.get(index).getDepartment() + students.get(index).getPhoneNum());
-			System.out.println("What is the information you want to update?(ex) department)");
-			s = scan.nextLine();
-			student = new StudentInfo(id, students.get(index).getName(), s, students.get(index).getPhoneNum());
-
-			students.set(index, student);
+			System.out.print("Input phone number to Update: ");
+			updatePhoneNum = scan.nextLine();
+			students.get(index).setPhoneNum(updatePhoneNum);
 		}
 		return students;
 	}
