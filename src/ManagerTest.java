@@ -41,6 +41,8 @@ public class ManagerTest {
 			students = add.add();
 			break;
 		case 2:
+			Update update = new Update(students);
+			students = update.update();
 			break;
 		case 3:
 			break;
