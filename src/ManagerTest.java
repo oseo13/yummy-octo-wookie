@@ -31,7 +31,7 @@ public class ManagerTest {
 		System.out.println("3. Delete");
 		System.out.println("4. View");
 		System.out.println("원하는 기능의 번호를 입력해주세요. 프로그램 종료를 원할 땐 1~4 외의 숫자를 입력하면 프로그램이 종료됩니다.");
-		System.out.print("> ");
+		System.out.print(">> ");
 	}
 	
 	public static void executeMenu(int selectedMenu){
