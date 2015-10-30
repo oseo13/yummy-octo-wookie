@@ -45,6 +45,8 @@ public class ManagerTest {
 			students = update.update();
 			break;
 		case 3:
+			Delete delete = new Delete(students);
+			students = delete.delete();
 			break;
 		case 4:
 			View view = new View(students);
