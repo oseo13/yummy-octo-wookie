@@ -6,11 +6,11 @@ import java.util.Scanner;
  * 학생정보 제거를 위한 클래스
  */
 
-public class Delete {
+public class Delete extends SearchIndex {
 
 	private StudentInfo student;
-	Scanner scan = new Scanner(System.in);
-	ArrayList<StudentInfo> students;
+	private Scanner scan = new Scanner(System.in);
+	private ArrayList<StudentInfo> students;
 
 	Delete(ArrayList<StudentInfo> students){
 		System.out.println("Delete");
@@ -20,15 +20,9 @@ public class Delete {
 	public ArrayList<StudentInfo> delete(){
 		
 		System.out.println("id: ");
-		Scanner s = new Scanner(System.in);
-		String deleteid = s.nextLine();
-		int count = students.size();
-		int index;
+		String id = scan.nextLine();
 		
-		for(index = 0;students.size() > index && !(students.get(index).getId().equals(deleteid)); ++index)
-			;
-		
-		students.remove(index);
+		students.remove(search(students, id));
 		return students;
 		
 	}

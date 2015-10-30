@@ -19,6 +19,10 @@ public class Add {
 	
 	Add(ArrayList<StudentInfo> students){
 		System.out.println("Add");
+		this.students = students;
+	}
+	
+	public ArrayList<StudentInfo> add(){
 		System.out.print("id: ");
 		id = scan.nextLine();
 		System.out.print("name: ");
@@ -27,11 +31,7 @@ public class Add {
 		department = scan.nextLine();
 		System.out.print("phone: ");
 		phone = scan.nextLine();
-		this.students = students;
 		student = new StudentInfo(id, name, department, phone);
-	}
-	
-	public ArrayList<StudentInfo> add(){
 		students.add(student);
 		Collections.sort(students, new Comparator<StudentInfo>(){
 			
