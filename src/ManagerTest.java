@@ -7,8 +7,8 @@ import java.util.Scanner;
  * main
  */
 public class ManagerTest {
-	static Scanner scan = new Scanner(System.in);
-	static final String FILE_NAME = "student.txt";
+	private static Scanner scan = new Scanner(System.in);
+	public static final String FILE_NAME = "student.txt";
 	public static ArrayList<StudentInfo> students;
 	public static void main(String args[]){
 		int selectedMenu = 1;
