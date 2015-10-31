@@ -25,7 +25,7 @@ public class ManagerTest {
 	}
 	
 	public static void showMenu(){
-		System.out.println("-------------------- menu --------------------");
+		System.out.println("-------------------- Menu --------------------");
 		System.out.println("1. Add");
 		System.out.println("2. Update");
 		System.out.println("3. Delete");
