@@ -49,6 +49,7 @@ public class FileIO {
 				//System.out.print(student.getId()+" "+student.getName()+" "+student.getDepartment()+" "+student.getPhoneNum()+"\n");
 			}
 			writer.close();
+			System.out.println("저장완료");
 		}catch(Exception ex){
 			System.out.println("Write file Error!: " + ex);
 		}
