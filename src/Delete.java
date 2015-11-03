@@ -13,7 +13,7 @@ public class Delete extends SearchIndex {
 	private ArrayList<StudentInfo> students;
 
 	Delete(ArrayList<StudentInfo> students){
-		System.out.println("Delete");
+		System.out.println("Delete!!");
 		this.students = students;
 	}
 	
