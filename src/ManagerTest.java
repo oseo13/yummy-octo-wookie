@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class ManagerTest {
 	private static Scanner scan = new Scanner(System.in);
 	public static final String FILE_NAME = "student.txt";
-	public static ArrayList<StudentInfo> students;
+	private static ArrayList<StudentInfo> students;
 	public static void main(String args[]){
 		int selectedMenu = 1;
 		students = new ArrayList<StudentInfo>();

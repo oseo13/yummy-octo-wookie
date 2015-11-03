@@ -22,11 +22,11 @@ public class FileIO {
 			while((line = reader.readLine()) != null){
 				person.add(line);
 			}
-			System.out.println("불러온 데이터");
+			//System.out.println("불러온 데이터");
 			for(int i=0; i< person.size(); i++){
 				tempPersonalInfo = person.get(i).split(" ");
 				students.add(new StudentInfo(tempPersonalInfo[0], tempPersonalInfo[1], tempPersonalInfo[2], tempPersonalInfo[3]));
-				System.out.println("id: "+ tempPersonalInfo[0]+", name: "+tempPersonalInfo[1]+", department: "+tempPersonalInfo[2]+", phone: "+tempPersonalInfo[3]);
+				//System.out.println("id: "+ tempPersonalInfo[0]+", name: "+tempPersonalInfo[1]+", department: "+tempPersonalInfo[2]+", phone: "+tempPersonalInfo[3]);
 			}
 			reader.close();
 		}catch(Exception ex){
@@ -39,14 +39,14 @@ public class FileIO {
 		try{
 			this.students = students;
 			BufferedWriter writer = new BufferedWriter(new FileWriter(ManagerTest.FILE_NAME));
-			System.out.print("저장 내용\n");
+			//System.out.print("저장 내용\n");
 			for(StudentInfo student:students){
 				writer.write(student.getId()+" ");
 				writer.write(student.getName()+" ");
 				writer.write(student.getDepartment()+" ");
 				writer.write(student.getPhoneNum());
 				writer.newLine();
-				System.out.print(student.getId()+" "+student.getName()+" "+student.getDepartment()+" "+student.getPhoneNum()+"\n");
+				//System.out.print(student.getId()+" "+student.getName()+" "+student.getDepartment()+" "+student.getPhoneNum()+"\n");
 			}
 			writer.close();
 		}catch(Exception ex){
