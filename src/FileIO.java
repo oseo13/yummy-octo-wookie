@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 /**
  * @author 이지민
- * ArrayList<StudentInfo> 객체를 통한 입출력 메소드를 제공하는 클래스 입니다.
+ * ArrayList<StudentInfo> 객체를 통한 입출력 메소드를 제공하는 클래스
  */
 public class FileIO {
 	
@@ -43,7 +43,7 @@ public class FileIO {
 				writer.write(student.getDepartment()+"/");
 				writer.write(student.getPhoneNum());
 				writer.newLine();
-				//System.out.print(student.getId()+" "+student.getName()+" "+student.getDepartment()+" "+student.getPhoneNum()+"\n");
+				System.out.print("저장 내용!!! "+student.getId()+" "+student.getName()+" "+student.getDepartment()+" "+student.getPhoneNum()+"\n");
 			}
 			writer.close();
 		}catch(Exception ex){
